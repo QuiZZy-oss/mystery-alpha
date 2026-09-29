@@ -1,0 +1,34 @@
+universe:
+  index: SP500
+  min_price: 5.0
+  min_dollar_volume: 5_000_000
+  membership_source: TBD
+
+target:
+  horizon_days: 20
+  label: cross_sectional_rank
+  price_field: adj_close
+
+calendar:
+  rebalance: weekly_friday_close
+  implementation_lag_days: 1
+  sleeves: 4
+
+splits:
+  train:      [2010-01-01, 2017-12-31]
+  validation: [2018-01-01, 2020-12-31]
+  test:       [2021-01-01, 2023-12-16]
+  purge_days: 28
+
+costs:
+  one_way_bps: 10
+  borrow_bps_annual: 40
+  turnover_convention: sum_abs_weight_change
+
+seeds:
+  global: 0
+
+paths:
+  raw: data/raw
+  interim: data/interim
+  processed: data/processed

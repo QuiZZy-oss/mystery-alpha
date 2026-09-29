@@ -1,0 +1,14 @@
+{
+  "source": "FRED DGS1, DGS10",
+  "rows": 4365,
+  "date_min": "2010-01-01",
+  "date_max": "2026-09-24",
+  "columns": [
+    "DGS1",
+    "DGS10"
+  ],
+  "missing_cells": 360,
+  "pulled_at": "2026-09-28T07:52:06",
+  "file": "data/raw/fred_rates.csv",
+  "sha256": "c5f72687e63afbd7"
+}

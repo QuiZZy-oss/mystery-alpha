@@ -1,0 +1,13 @@
+{
+  "source": "Yahoo ^VIX",
+  "rows": 4210,
+  "date_min": "2010-01-04",
+  "date_max": "2026-09-25",
+  "columns": [
+    "vix_close"
+  ],
+  "missing_cells": 0,
+  "pulled_at": "2026-09-28T07:52:07",
+  "file": "data/raw/vix.csv",
+  "sha256": "5b32d8247ad0aace"
+}
