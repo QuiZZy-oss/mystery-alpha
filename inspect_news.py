@@ -81,7 +81,8 @@ def main():
     slim_parts = []
 
     chunks = ([pd.read_parquet(path)] if path.suffix == ".parquet"
-              else pd.read_csv(path, chunksize=a.chunk, low_memory=False))
+                else pd.read_csv(path, chunksize=a.chunk, low_memory=False,
+                               engine="python", on_bad_lines="skip"))
 
     for ch in chunks:
         rows += len(ch)
